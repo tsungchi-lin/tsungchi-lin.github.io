@@ -226,6 +226,28 @@
       .teaching h2 { font-size: 25px; }
       .course h3 { font-size: 17px; }
     }
+    .course-images {
+      display: flex;
+      gap: 16px;
+      margin-top: 18px;
+      align-items: flex-start;
+    }
+    
+    .course-images img {
+      width: 32%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+    @media (max-width: 560px) {
+      .course-images {
+        gap: 10px;
+      }
+    
+      .course-images img {
+        width: calc(50% - 5px);
+      }
+    }
   </style>
 </head>
 <body>
@@ -278,6 +300,10 @@
         <h3>CS 698. Human-Robot Interaction <span>(graduate)</span></h3>
         <p>Topics: human-centered interfaces | human-robot collaboration | multi-human multi-robot interaction | HRI evaluation</p>
         <span class="term">Spring 2026</span>
+        <div class="course-images">
+          <img src="assets/images/hri-2026-1.jpg" alt="Human-Robot Interaction course image 1">
+          <img src="assets/images/hri-2026-2.jpg" alt="Human-Robot Interaction course image 2">
+        </div>
       </div>
     </section>
   </main>
